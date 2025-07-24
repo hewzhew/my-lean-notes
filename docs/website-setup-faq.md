@@ -9,6 +9,18 @@ tags:
 
 本文档记录了在使用 GitHub Pages 和 MkDocs 搭建个人网站过程中遇到的问题及其解决方案。
 
+### **MkDocs + GitHub Pages 网站搭建流程**
+
+1.  在 GitHub 创建一个新的公开 (Public)仓库，可以不勾选初始化文件（如 `README`）。
+2.  在本地电脑上，使用 `git clone` 命令克隆这个仓库，然后 `cd` 进入项目文件夹。
+3.  运行 `pip install mkdocs mkdocs-material` 命令，安装建站工具和主题。
+4.  在项目根目录，手动创建三个核心部分：配置文件 `mkdocs.yml`，用于自动部署的工作流文件 `.github/workflows/ci.yml`，以及存放所有笔记的 `docs` 文件夹（需在 `docs` 内再创建一个首页 `index.md`）。
+5.  完成文件创建后，使用 `git add .`、`git commit -m "Initial setup"` 和 `git push` 将网站的基础框架推送到 GitHub。
+6.  在 GitHub 仓库的 **`Settings > Pages`** 页面，将部署源 (Source) 设置为 **`Deploy from a branch`**，然后从下拉菜单中选择 **`gh-pages`** 分支并点击保存。
+7.  等待 `Actions` 自动运行成功后，即可在 `Settings > Pages` 页面顶部找到并访问网站公开地址。
+
+完成以上步骤，网站即搭建完毕并已配置好自动化部署。之后的所有更新，都只需在本地修改 `docs` 文件夹内的文件，然后重复第五步的 `add`, `commit`, `push` 即可。
+
 ## 问题一：GitHub Actions 显示成功，但网站无法访问 (404 Not Found)
 
 **现象:**
