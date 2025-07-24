@@ -1,6 +1,10 @@
 site_name: 我的 Lean 学习笔记
 site_author: hewzhew
 
+nav:
+      - 首页: index.md
+      - 建站经验: website-setup-faq.md
+
 theme:
   name: material
   language: zh
@@ -22,6 +26,7 @@ theme:
     - search.highlight
     - content.code.annotate
     - content.code.copy
+    - tags
 
 markdown_extensions:
   - admonition
@@ -33,6 +38,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.arithmatex:
       generic: true
+  - attr_list
 
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
