@@ -7,6 +7,8 @@ nav:
       - Lean:
           - Lean 搜索:
               - lean/search/precise-search.md
+          - Lean 工具:
+              - lean/tools/lean-tools.md
 theme:
   name: material
   language: zh
