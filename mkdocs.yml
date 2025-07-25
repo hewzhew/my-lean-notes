@@ -9,6 +9,9 @@ nav:
               - lean/search/precise-search.md
           - Lean 工具:
               - lean/tools/lean-tools.md
+          - 其他工具:
+              - lean/tools/other-tools.md
+
 theme:
   name: material
   language: zh
