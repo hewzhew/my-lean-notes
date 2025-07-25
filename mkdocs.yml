@@ -7,6 +7,7 @@ nav:
       - Lean:
           - Lean 搜索:
               - lean/search/precise-search.md
+              - lean/search/meta.md
           - Lean 工具:
               - lean/tools/lean-tools.md
           - 其他工具:
