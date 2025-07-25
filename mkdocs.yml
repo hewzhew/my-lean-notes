@@ -4,7 +4,9 @@ site_author: hewzhew
 nav:
       - 首页: index.md
       - 建站经验: website-setup-faq.md
-
+      - Lean:
+          - Lean 搜索:
+              - lean/search/
 theme:
   name: material
   language: zh
